@@ -1,0 +1,101 @@
+button{
+    border: none;
+    color: unset;
+}
+
+a{
+    text-decoration: unset;
+}
+
+.m{
+    &-auto{ margin: auto;}
+    &b-auto{ margin-bottom: auto;}
+    &t-auto{ margin-top: auto;}
+    &l-auto{ margin-left: auto;}
+    &r-auto{ margin-right: auto;}
+    &x-auto{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    &y-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@for $i from 0 through 10 {
+    .m{
+        &-#{$i}{
+            margin: $i * .25rem !important;
+        }
+        &b-#{$i}{
+            margin-bottom: $i * .25rem !important;
+        }
+        &t-#{$i}{
+            margin-top: $i * .25rem !important;
+        }
+        &l-#{$i}{
+            margin-left: $i * .25rem !important;
+        }
+        &r-#{$i}{
+            margin-right: $i * .25rem !important;
+        }
+        &x-#{$i}{
+            margin-left: $i * .25rem !important;
+            margin-right: $i * .25rem !important;
+        }
+        &y-#{$i}{
+            margin-top: $i * .25rem !important;
+            margin-bottom: $i * .25rem !important;
+        }
+    }
+}
+
+
+.p{
+    &-auto{ padding: auto;}
+    &b-auto{ padding-bottom: auto;}
+    &t-auto{ padding-top: auto;}
+    &l-auto{ padding-left: auto;}
+    &r-auto{ padding-right: auto;}
+    &x-auto{
+        padding-top: auto;
+        padding-bottom: auto;
+    }
+    &y-auto{
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+@for $i from 0 through 10 {
+    .p{
+        &-#{$i}{
+            padding: $i * .25rem !important;
+        }
+        &b-#{$i}{
+            padding-bottom: $i * .25rem !important;
+        }
+        &t-#{$i}{
+            padding-top: $i * .25rem !important;
+        }
+        &l-#{$i}{
+            padding-left: $i * .25rem !important;
+        }
+        &r-#{$i}{
+            padding-right: $i * .25rem !important;
+        }
+        &x-#{$i}{
+            padding-left: $i * .25rem !important;
+            padding-right: $i * .25rem !important;
+        }
+        &y-#{$i}{
+            padding-top: $i * .25rem !important;
+            padding-bottom: $i * .25rem !important;
+        }
+    }
+}
+
+.text{
+    &-white{
+        color: white;
+    }
+}

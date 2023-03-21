@@ -1,0 +1,252 @@
+section.our-goals {
+  text-align: center;
+}
+section.our-goals > * {
+  margin-bottom: 20px;
+}
+section.our-goals .content-sub-title {
+  max-width: 920px;
+  margin: 0 auto 20px;
+}
+section.our-goals .video-wrapper {
+  max-width: 1020px;
+  margin: 0 auto 2rem;
+}
+section.our-goals .video-wrapper .video-container {
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
+}
+section.our-goals .video-wrapper .video-container .video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.our-goals .goal {
+  width: 300px;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+section.our-goals .goal-wrapper {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  max-width: 1018px;
+  position: relative;
+}
+section.our-goals .goal-img {
+  margin: 0 auto 1rem;
+  position: relative;
+}
+section.our-goals .goal-img img {
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition-property: top, left, opacity;
+  transition-duration: 500ms;
+  margin: auto;
+}
+section.our-goals .goal-text {
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition-property: top, left, opacity;
+  transition-duration: 500ms;
+  font-size: 27px;
+  padding: 0 5px;
+}
+section.our-goals .goal:nth-child(1) {
+  z-index: 3;
+}
+section.our-goals .goal:nth-child(2) {
+  z-index: 2;
+}
+section.our-goals .goal:nth-child(3) {
+  z-index: 1;
+}
+section.our-goals .goal:nth-child(1) .goal-img img:not(.goal-divider) {
+  transition-delay: 500ms;
+}
+section.our-goals .goal:nth-child(1) .goal-text {
+  transition-delay: 700ms;
+}
+section.our-goals .goal:nth-child(2) .goal-img img:not(.goal-divider) {
+  transition-delay: 1000ms;
+}
+section.our-goals .goal:nth-child(2) .goal-text {
+  transition-delay: 1200ms;
+}
+section.our-goals .goal:nth-child(3) .goal-img img:not(.goal-divider) {
+  transition-delay: 1500ms;
+}
+section.our-goals .goal:nth-child(3) .goal-text {
+  transition-delay: 1700ms;
+}
+section.our-goals .goal-divider {
+  position: absolute !important;
+  z-index: 2;
+  width: 150px;
+  top: 50% !important;
+  left: 80% !important;
+  transform: translateY(-50%);
+  transition: all 500ms ease-out !important;
+  transition-delay: 850ms !important;
+}
+section.our-goals .goal-divider-down {
+  top: unset !important;
+  bottom: 0 !important;
+  transition-delay: 1350ms !important;
+}
+section.aling-tindera {
+  position: relative;
+  padding-top: 7rem;
+  overflow-y: hidden;
+}
+section.aling-tindera .animated-background {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  position: absolute;
+  overflow-x: clip;
+}
+section.aling-tindera .animated-background .wave-wrapper {
+  position: absolute !important;
+  height: calc(100% + 1rem);
+  width: 200%;
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition-property: top, left, opacity;
+  transition-duration: 500ms;
+  top: 0 !important;
+}
+section.aling-tindera .animated-background .wave-wrapper:nth-child(1) {
+  transition-delay: 300ms;
+}
+section.aling-tindera .animated-background .wave,
+section.aling-tindera .animated-background .wave-transparent {
+  height: calc(100% + 1rem);
+  background-image: url("../images/wave.png");
+  background-size: auto 150%;
+  background-position: top;
+  position: absolute;
+  width: 250%;
+  top: 3rem;
+  opacity: 1;
+  animation: wave 100s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite alternate, wave-updown 2.5s infinite;
+}
+section.aling-tindera .animated-background .wave-transparent {
+  background-image: url("../images/wave-transparent.png");
+  z-index: -1;
+  animation: wave 200s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite alternate, wave-updown 10s infinite;
+}
+section.aling-tindera .animated-background .sun {
+  height: auto;
+  width: 300px;
+  z-index: -2000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  opacity: 1;
+  transform: translateX(-50%) rotate(-5deg);
+  animation: sun 5s linear infinite;
+  transition-property: top, left, opacity;
+  transition-duration: 500ms;
+  transition-delay: 700ms;
+}
+section.aling-tindera .wrapper {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  margin: auto;
+  color: white;
+  align-items: center;
+  padding-top: 100px;
+}
+section.aling-tindera .wrapper > div {
+  position: relative;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  transition-property: top, left, opacity;
+  transition-duration: 500ms;
+  transition-delay: 1.25s;
+}
+section.aling-tindera .wrapper > div:nth-child(2) > * {
+  margin-bottom: 30px;
+}
+section.aling-tindera .wrapper p {
+  padding-left: 5px;
+  line-height: 1.5;
+}
+
+.js-scroll.goal-wrapper .goal:nth-child(1) .goal-img img:not(.goal-divider),
+.js-scroll.goal-wrapper .goal:nth-child(1) .goal-text {
+  opacity: 0 !important;
+  left: -2rem;
+}
+.js-scroll.goal-wrapper .goal:nth-child(3) .goal-img img:not(.goal-divider),
+.js-scroll.goal-wrapper .goal:nth-child(3) .goal-text {
+  opacity: 0 !important;
+  left: 2rem;
+}
+.js-scroll.goal-wrapper .goal:nth-child(2) .goal-img img:not(.goal-divider),
+.js-scroll.goal-wrapper .goal:nth-child(2) .goal-text {
+  opacity: 0 !important;
+  top: 2rem;
+}
+.js-scroll.goal-wrapper .goal-divider {
+  opacity: 0 !important;
+  left: 120% !important;
+}
+.js-scroll.aling-tindera .animated-background .wave-wrapper {
+  opacity: 0;
+  top: 5rem !important;
+}
+.js-scroll.aling-tindera .animated-background .sun {
+  top: 30% !important;
+  opacity: 0;
+}
+.js-scroll.aling-tindera .wrapper > div {
+  opacity: 0;
+}
+.js-scroll.aling-tindera .wrapper > div:nth-child(odd) {
+  left: -2rem;
+}
+.js-scroll.aling-tindera .wrapper > div:nth-child(even) {
+  left: 2rem;
+}
+
+body.screen-medium .our-goals .goal-wrapper {
+  margin: auto -60px !important;
+}
+body.screen-medium .aling-tindera .animated-background {
+  background: linear-gradient(transparent 50%, #2bbdb9 50%) !important;
+}
+body.screen-medium .aling-tindera .animated-background .wave-wrapper {
+  height: 60% !important;
+}
+body.screen-medium .aling-tindera .wrapper {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+body.screen-medium .aling-tindera .wrapper * {
+  margin: 20px 0;
+}
+body.screen-medium .aling-tindera .wrapper img {
+  margin: auto;
+  margin-top: 20px;
+}
+body.screen-small section.aling-tindera {
+  padding-top: 9rem !important;
+}

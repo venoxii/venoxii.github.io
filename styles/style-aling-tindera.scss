@@ -1,0 +1,352 @@
+// START
+@import "colors";
+@import "animations";
+
+section{
+    &.banner{
+        .filler{
+            height: 50px;
+            background: $color-americanGreen;
+        }
+    }
+    &.program-intro{
+        width: 100%;
+        margin: auto;
+        // max-width: 1400px;
+        &>p{
+            text-align: left;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .aling-tindera-logo{
+            float: left;
+            height: 600px;
+            img{
+                height: 100%;
+                padding: 20px 50px 20px 20px;
+            }
+        }
+        .intro-footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            margin: auto;
+            h1{
+                font-size: 2.35rem;
+            }
+            img{
+                margin-right: 20px;
+            }
+        }
+    }
+    &.aling-tindera{
+        padding-bottom: 0;
+        .wrapper{
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            .collect,
+            .drop-off{
+                img{
+                    max-width: 200px;
+                }
+            }
+            .collect{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                .collect-text{
+                    font-size: 37px;
+                    &.collect-title{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .drop-off{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                .drop-text{
+                    font-size: 37px;
+                    padding-right: 20px;
+                    width: 340px;
+                    &.drop-title{
+                        text-decoration: underline;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    &.cash-out-sec{
+        background: url("../images/cash-out-bg.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        padding-top: 2rem;
+        .cash-out{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            .drop-peso{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    padding-left: 20px;
+                    font-size: 1.2rem;
+                    color: $color-darkAqua;
+                    &.drop-title{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .drop-container{
+                margin-left: 50px;
+                width: 50%;
+                max-width: 550px;
+            }
+        }
+    }
+    &.sites{
+        .map-container{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            background: #e9ebed;
+            margin-top: 30px;
+            .location-container{
+                min-width: 30%;
+                max-height: 500px;
+                display: flex;
+                flex-direction: column;
+                .location-input{
+                    background: $color-cyan;
+                    padding: 10px;
+                    text-align: center;
+                    input{
+                        margin: auto;
+                        border-radius: 1000px;
+                        text-align: left;
+                        border: 0;
+                        padding: 0 20px;
+                        width: 100%;
+                    }
+                }
+                .location-wrapper{
+                    overflow: scroll;
+                    height: 100%;
+                    .location-item{
+                        display: block;
+                        cursor: pointer;
+                        font-size: 25px;
+                        padding: 20px;
+                        padding-left: 60px;
+                        border-bottom: 1px solid $color-dark;
+                        position: relative;
+                        &:hover{
+                            background: $color-offGreen;
+                        }
+                        span{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: inline-block;
+                            width: 100%;
+                        }
+                        &::before{
+                            content: url("../images/pin.png");
+                            position: absolute;
+                            top: 0;
+                            left: 30px;
+                            height: 100%;
+                            padding: 20px 0;
+                        }
+                    }
+                }
+            }    
+            .map-wrapper{
+                width: 100%;
+                .map {
+                    padding-top: 500px;
+                    height: 0px;
+                    position: relative;
+                    iframe{
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    &.rates{
+        .rates-table{
+            padding: 20px;
+            table{
+                width: 100%;
+                margin: auto;
+                border: 4px solid $color-topaz;
+                td{
+                    border: 1px solid $color-topaz;
+                    padding: 20px;
+                }
+                tr.no-border td{
+                    border: none;
+                }
+
+            }
+            .aligned-col{
+                text-align: center;
+                padding: 15px 0 15px 0;
+            }
+        }
+    }
+    &.kita-cal{
+        .kita-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .kita-form{
+                background-color: $color-orange;
+                border-radius: 50px;
+                width: 500px;
+                text-align: center;
+                padding: 30px;
+                margin: auto;
+                ::placeholder{
+                    color: $color-dark;
+                }   
+                select, input{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    border-radius: 20px;
+                    padding: 15px;
+                    border: none;
+                    color: $color-dark;
+                                     
+                }
+                .total::placeholder{
+                    color: $color-orange;
+                }
+                button{
+                    background-color: $color-topaz;
+                    border: none;
+                    width: 50%;
+                    color: $color-offGreen;
+                    margin-bottom: 70px;
+                    border-radius: 25px;
+                    padding: 10px 50px;
+                }
+            }
+            .kita-desc{
+                margin: 0 auto auto 0;
+                padding: 10px;
+                .desc-title{
+                    margin-bottom: 50px;
+                }
+                .desc-sub{
+                    color: $color-topaz;
+                }
+                p{
+                    font-size: 37px;
+                }
+            }
+        }
+    }
+}
+
+body{
+    &.screen-medium-below{
+        section{
+            &.banner{
+                .filler{
+                    height: 100px;
+                }
+            }
+            .aling-tindera-logo{
+                width: 100%;
+                height: unset;
+                padding-bottom: 50px;
+                img{
+                    padding: 0;
+                    max-width: 600px;
+                    height: auto;
+                    margin: auto;
+                }
+            }
+            &.aling-tindera{
+                .wrapper{
+                    margin: 0;
+                }
+                .collect,
+                .drop-off,
+                .trash-variants{
+                    margin: 0;
+                    padding: 0;
+                    img{
+                        margin: 0 !important;
+                    }
+                    p{
+                        text-align: left;
+                        padding: 5px 10px;
+                        margin: 0;
+                    }
+                }
+                .drop-off p{
+                    text-align: right;
+                }
+                .trash-variants img{
+                    width: 100%;
+                }
+            }
+            &.kita-cal{
+                .kita-container{
+                    flex-direction: column-reverse;
+                    .kita-form{
+                        margin-top: 1rem;
+                    }
+                    .kita-desc{
+                        width: 100%;
+                        .desc-sub,
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            &.sites{
+                .map-container{
+                    flex-direction: column;
+                    .location-container{
+                        max-height: 700px;
+                        .location-item{
+                            font-size: 30px;
+                            &::before{
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    input{
+                        font-size: 40px;
+                    }
+                }
+            }
+        } 
+    }
+    &.screen-small{
+        section{
+            &.rates {
+                padding: 100px 0 0;
+                .content-title{
+                    padding: 0 80px;
+                }
+                .rates-table table td{
+                    font-size: 27px !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.title{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-size: 6vw;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 110%;
+}

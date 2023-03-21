@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content-wrapper="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" content-wrapper="maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content-wrapper="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Saving Our Seas - Century Tuna Philippines</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-home.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/style-aling-tindera.css">
+    <script src="scripts/aling-tindera.js"></script>
+</head>
+<body>
+    <main id="main">
+        <header id="header">
+            <a href="/SavingOurSeas">
+                <img class="head-logo" src="images/logo-white.png" alt="Save Our Seas">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <input type="checkbox" id="checkbox_toggle">
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    <div class="menu">
+                        <li><a href="/SavingOurSeas">Home</a><img class="fish-indicator" src="images/fish.png"></li>
+                        <li><a href="/SavingOurSeas/about.html">About</a><img class="fish-indicator" src="images/fish.png"></li>
+                        <li><a href="/SavingOurSeas/aling-tindera.html">Aling Tindera</a><img class="fish-indicator" src="images/fish.png"></li>
+                        <li><a href="/SavingOurSeas/events.html">Events</a><img class="fish-indicator" src="images/fish.png"></li>
+                    </div>
+                </ul>                
+            </nav>
+        </header>
+        <section class="banner">
+            <img class="banner-background" src="images/plastik-palit-pera.png" alt="Girl on water with trash" srcset="">
+        </section>
+        <section class="content-wrapper our-goals program-intro">
+            <div class="aling-tindera-logo">
+                <img src="images/aling-tindera-logo.png" alt="">
+            </div>
+            <img src="images/deep-dive.png" alt="">
+            <p>Through our partnership with HOPE’s Aling Tindera, we are able to push for our goal of creating a circular economy for plastic - helping ensure that all plastics collected are diverted away from nature by bringing the plastic waste to processors who turn them into something useful.</p>
+            <p>As we keep plastic items circulating within the economy, we also keep them safely out of the environment. Why does this matter?</p>
+            <p>It’s a difficult situation to acknowledge that only 14% of global plastics get recycled, according to the Ellen Macarthur Foundation. The vast majority of plastic ends up either in landfills or polluting the ecosystem. The more we allow plastic pollution to persist, the more we risk causing serious damage to our natural resources.</p>
+            <p>Imagine accelerated climate change totally disrupting the balance of our world. Imagine fish and other marine life ingesting dire amounts of plastics and micro-plastics that are toxic to them - in turn, making them toxic to humans down the line. Or worse yet, imagine a world where our oceans contain more plastic than marine life. These are scenarios that not only sound terrible, but are also very realistic given current human consumption of plastic and how they’re treating post-consumer plastic.  But as real as the danger may be, it is still very much preventable.</p>
+            <p>The time is now to start shifting our view of used plastic as simply “waste” and start pushing for all plastics to be reused as much as possible in a closed loop. No more one-time use materials and unsustainable disposal practices. In a circular economy of plastic, it becomes natural that consumers at large realize the benefits of proper reuse, recycling and if need be, disposal of plastic - thus keeping the value of plastics while eliminating its negative effects on the environment.</p>
+            <div class="intro-footer">
+                <img src="images/bottle.png" alt="">
+                <h1>THERE'S A RIGHT ROUTE FOR PLASTIC</h1>
+            </div>
+        </section>
+        <section class="content-wrapper aling-tindera">
+            <div class="animated-background">
+                <div class="wave-wrapper"><div class="wave"></div></div>
+                <div class="wave-wrapper"><div class="wave-transparent"></div></div>
+            </div>
+            <div class="wrapper">
+                <div class="collect">
+                    <img src="images/collect-logo.png" alt="">
+                    <div>
+                        <p class="collect-text collect-title">COLLECT</p>
+                        <p class="collect-text collect-body">your plastic waste and segregate it</p>
+                    </div>
+                </div>
+                <div class="trash-variants">
+                    <img src="images/trash-variants.png" alt="">
+                </div>
+                <div class="drop-off">
+                    <div>
+                        <p class="drop-text drop-title">DROP OFF</p>
+                        <p class="drop-text">your plastic at the nearest Aling Tindera drop off site</p>
+                    </div>
+                    <img src="images/drop-off-logo.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="content-wrapper js-scroll cash-out-sec">
+            <div class="cash-out">
+                <div class="drop-peso">
+                    <img src="images/peso.png" alt="">
+                    <div>
+                        <p class="drop-title">CASH OUT</p>
+                        <p>earn Php 2-15/kilo<br>of plastic waste</p>
+                    </div>
+                </div>
+                <img class="drop-container" src="images/container.png" alt="">
+            </div>
+        </section>
+        <section class="content-wrapper js-scroll sites">
+            <h1 class="content-title"><img src="images/fish.png" alt="" srcset=""> DROP OFF SITES</h1>
+            <div class="map-container">
+                <div class="location-container">
+                    <div class="location-input">
+                        <input type="Enter Location" onkeyup="searchDropOff()" id="searchDropOff" placeholder="Enter Location">
+                    </div>
+                    <div class="location-wrapper" id="location-wrapper">
+                        <a class="location-item" id="aileen_by_the_sea">
+                            <span>Aileen By The Sea Beach Resort</span>
+                        </a>
+                        <a class="location-item" id="anilao_awari">
+                            <span>Anilao Awari Bay Resort</span>
+                        </a>
+                        <a class="location-item" id="camp_netanya">
+                            <span>Camp Netanya Resort & Spa</span>
+                        </a>
+                        <a class="location-item" id="casa_escondida">
+                            <span>Casa Escondida Anilao Resort & Dive Center</span>
+                        </a>
+                        <a class="location-item" id="aiyanar_beach">
+                            <span>Aiyanar Beach & Dive Resort</span>
+                        </a>
+                        <a class="location-item" id="solitude_acacia">
+                            <span>Solitude Acacia Resort</span>
+                        </a>
+                        <a class="location-item" id="parecaa">
+                            <span>Parecaa Beach Resort</span>
+                        </a>
+                        <a class="location-item" id="crystal_blue">
+                            <span>Crystal Blue Resort</span>
+                        </a>
+                        <a class="location-item" id="arthurs_place">
+                            <span>Arthur's Place Dive Resort</span>
+                        </a>
+                        <a class="location-item" id="dive_solana">
+                            <span>Dive Solana Resort</span>
+                        </a>
+                        <a class="location-item" id="sea_spring">
+                            <span>Sea Spring Resort</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="map-wrapper">
+                    <div class="map">
+                        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3174306823194!2d120.92533431507756!3d13.75972119034235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd077642b2bf6b%3A0x16a2d714f3ed2b1a!2sAileen%20by%20the%20Sea%20Beach%20Resort!5e0!3m2!1sen!2sph!4v1678391236469!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-wrapper js-scroll rates">
+            <h1 class="content-title"><img src="images/fish.png" alt="" srcset=""> RATES</h1>
+            <div class="rates-table">
+                <table>
+                    <tr class="no-border">
+                        <td></td>
+                        <td class="aligned-col">AT Buying price from community</td>
+                        <td class="aligned-col">PCX Buying price from AT</td>
+                    </tr>
+                    <tr>
+                        <td>SOFT Plastics (LDPE)</td>
+                        <td class="aligned-col">2 PHP/KG</td>
+                        <td class="aligned-col">2.50 PHP/KG</td>
+                    </tr>
+                    <tr>
+                        <td>PET (CLEAR)</td>
+                        <td class="aligned-col">15 PHP/KG</td>
+                        <td class="aligned-col">20 PHP/KG</td>
+                    </tr>
+                    <tr>
+                        <td>PET (MIXED) - with caps or labels</td>
+                        <td class="aligned-col">10 PHP/KG</td>
+                        <td class="aligned-col">15 PHP/KG</td>
+                    </tr>
+                    <tr>
+                        <td>PET (COLORED)</td>
+                        <td class="aligned-col">2 PHP/KG</td>
+                        <td class="aligned-col">2.50 PHP/KG</td>
+                    </tr>
+                    <tr>
+                        <td>TARPAULIN</td>
+                        <td class="aligned-col">2 PHP/KG</td>
+                        <td class="aligned-col">2.50 PHP/KG</td>
+                    </tr>
+                    <tr>
+                        <td>SYRENE</td>
+                        <td class="aligned-col">2 PHP/KG</td>
+                        <td class="aligned-col">2.50</td>
+                    </tr>
+                    <tr>
+                        <td>HDPE/PP/HARD PLASTICS</td>
+                        <td class="aligned-col">2 PHP/KG</td>
+                        <td class="aligned-col">2.50 PHP/KG</td>
+                    </tr>
+                    <tr>
+                        <td>TETRA / similar multi-layer (paper-based) packaging</td>
+                        <td class="aligned-col">2 PHP/KG</td>
+                        <td class="aligned-col">2.50 PHP/KG</td>
+                    </tr>
+                    <tr class="no-border">
+                        <td colspan="3">*as of December 01, 2021</td>
+                    </tr>
+                    <tr class="no-border">
+                        <td colspan="3">*all prices are still subject to change</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="content-wrapper js-scroll kita-cal">
+            <div class="kita-container">
+                <div class="kita-form">
+                    <select name="item-type" id="item-type">
+                        <option value="" disabled selected>ITEM TYPE</option>
+                        <option value="softplastics">SOFT Plastics (LDPE)</option>
+                        <option value="petclear">PET (CLEAR)</option>
+                        <option value="petmixed">PET (MIXED) - with caps or labels</option>
+                        <option value="petcolored">PET (COLORED)</option>
+                        <option value="tarp">TARPAULIN</option>
+                        <option value="syrene">SYRENE</option>
+                        <option value="hdpe">HDPE/PP/HARD PLASTICS</option>
+                        <option value="tetra">TETRA / similar multi-layer (paper-based) packaging</option>
+                    </select> <br>
+                    <input type="number" name="quantity" id="quantity" placeholder="QUANTITY IN KG"> <br>
+                    <button type="button" id="cal-btn" onclick="calculateKita()">CALCULATE</button><br>
+                    <input class="total" type="text" name="total" id="total" placeholder="TOTAL" readonly>
+                </div>
+                <div class="kita-desc">
+                    <h1 class="content-title desc-title"><img src="images/fish.png" alt="" srcset=""> KITA CALCULATOR</h1>
+                    <h1 class="content-title desc-sub">WEIGH TO GO!</h1>
+                    <p>See how much your plastic stash is worth.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="contact-us">
+                <h1>Send us a message</h1>
+                <form id="messageForm">
+                    <input name="name" type="text" placeholder="NAME">
+                    <input name="subject" type="text" placeholder="SUBJECT">
+                    <textarea name="message" rows="5" placeholder="MESSAGE"></textarea>
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/centurytuna/">
+                    <img class="fish-indicator" src="images/fish.png">
+                    <img src="images/socials-facebook.png" alt="" srcset="">
+                    Century Tuna Superbods
+                </a>
+                <a href="https://www.instagram.com/centurytunasuperbods/?hl=en">
+                    <img class="fish-indicator" src="images/fish.png">
+                    <img src="images/socials-instagram.png" alt="" srcset="">
+                    @centurytunasuperbods
+                </a>                
+                <a href="mailto:LetUsTalk@centurypacific.com.ph">
+                    <img class="fish-indicator" src="images/fish.png">
+                    <img src="images/socials-email.png" alt="" srcset="">
+                    LetUsTalk@centurypacific.com.ph
+                </a>
+            </div>
+            <div class="site-map">
+                <a href="/SavingOurSeas"><img class="logo-footer" src="images/logo-large.png" alt="" srcset=""></a>
+                <a href="/SavingOurSeas"><img class="fish-indicator" src="images/fish.png">Home</a>
+                <a href="/SavingOurSeas/about.html"><img class="fish-indicator" src="images/fish.png">About</a>
+                <a href="/SavingOurSeas/aling-tindera.html"><img class="fish-indicator" src="images/fish.png">Aling Tindera</a>
+                <a href="/SavingOurSeas/events.html"><img class="fish-indicator" src="images/fish.png">Events</a>
+            </div>
+        </footer>
+        <h1 class="all-rights-reserve">All Rights Reserved</h1>
+    </main>
+
+    <div id="loader">
+        <svg id="fishes" class="fishes" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 676.39 500">
+            <g>
+                <path class="fish3" fill="#f15a48" d="M537.2,382c-27.8,44.7-96.3-26-125.5-61.4c-10,18.5-49.2,78.2-135.8,78.2c-102.4,0-137.2-83.6-137.2-83.6
+                    s36.1-83.6,138.5-83.6c90.9,0,128.5,65.7,135.9,80.6c10.2-3,29.7-11.3,43.4-33.9c19.3-31.9,47.4-21.3,50.3-19.3
+                    c2.9,1.9,25.1,22.2,0,49.3C506.8,308.3,566.9,334.2,537.2,382L537.2,382z"/>
+                <path class="fish2" fill="#f15a48" d="M668.3,130.6c-24,38.5-83-22.4-108.1-52.9c-8.7,15.9-42.4,67.4-117.1,67.4c-88.3,0-118.3-72-118.3-72
+                    S355.9,1,444.2,1C522.5,1,555,57.7,561.3,70.5c8.8-2.6,25.6-9.8,37.4-29.2c16.7-27.5,40.8-18.3,43.3-16.7c2.5,1.7,21.6,19.2,0,42.5
+                    C642,67.1,693.9,89.3,668.3,130.6L668.3,130.6z"/>
+                <path class="fish1" fill="#f15a48" d="M244,184.8c-16.9,27.3-58.7-15.9-76.5-37.4c-6.1,11.3-30,47.7-82.8,47.7C22.2,195,1,144,1,144s22-51,84.5-51
+                    c55.4,0,78.4,40.1,82.9,49.2c6.2-1.8,18.1-6.9,26.5-20.7c11.8-19.4,28.9-13,30.6-11.8c1.8,1.2,15.3,13.6,0,30.1
+                    C225.5,139.8,262.1,155.6,244,184.8L244,184.8z"/>
+            </g>
+        </svg>
+        <p hidden>Please wait...</p>
+    </div>
+
+    <div id="form-success">
+        <div class="message">
+            <h1>THANK YOU</h1>
+            <p>We received your message!</p>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script-defer.js" defer></script>
+</body>
+</html>

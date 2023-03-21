@@ -1,0 +1,606 @@
+// START
+@import "colors";
+@import "animations";
+
+.red{
+    background:red !important;
+}
+    
+
+section{    
+    position: relative;
+    .source{
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: $color-darkAqua;
+        padding: 0 20px !important;
+        text-align: center;
+        width: 100% !important;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .statistics,
+    .statistics-2{
+        max-width: 1400px;
+        margin: auto;
+    }
+    &.content-wrapper{
+        padding:0;
+    }
+    &.movement{
+        padding: 2rem;
+        background: url("../images/cash-out-bg.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        padding-top: 250px !important;
+        .wrapper{
+            display: block;
+            background: $color-orange;
+            padding: 50px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 800px;
+            h3{
+                margin-top: 20px;
+                color: white;
+            }
+        }
+    }
+    &.our-goals{
+        padding:100px 100px 70px;
+        .text-normal{
+            text-transform:none !important;
+            margin-bottom: 50px;
+        }
+        
+        .content{            
+            line-height: 1.5;
+            &.content-intro{
+                text-align: center;
+                margin: auto;
+            }
+        }        
+        .content-body-wrapper{
+            margin:  50px auto 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            .img-wrapper{
+                padding-right: 50px;
+                img{
+                    display: unset;
+                    width: 100% !important;
+                    margin-top: 20px;
+                }
+            }
+            .content-body{
+                text-align: left;
+                padding-left:30px;
+            }
+        }
+
+        .content-footer{            
+            padding:65px 5%;
+        }
+    }
+    &.aling-tindera{
+        &:not(.aling-tindera-about){
+            padding-bottom: 100px !important;
+        }
+        .statistics{
+            display: flex;            
+            margin: 120px auto 20px auto;
+            padding:0 10%;
+            color: $color-offGreen;
+            flex-grow: 0 auto;
+            padding-top: 200px;
+            padding-bottom: 100px;
+            
+            &.statistics-rate{
+                margin-top: 20px;
+                margin-top: 20px;        
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: auto;
+                .content-statistics-title{
+                    grid-column: 1 / span 3;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    color: $color-darkAqua;
+                    padding: 0 50px;
+                }
+                .left-content,
+                .middle-content,
+                .right-content{
+                    width: 100%;
+                    table{
+                        width: 100%;
+                    }
+                }
+                .left-content{      
+                    text-align: right;
+                    padding-right: 40px;
+                    .rate-number {
+                        font-size:7em;
+                    }
+                }
+
+                .right-content{
+                    justify-content: start;
+                    padding: 0;
+                }
+            }
+            .left-content{
+                //width: 100%;
+                width: 40%;             
+                text-align: center;   
+                .content-statistics-title{
+                    color: $color-darkAqua;
+
+                    span {
+                        text-transform: uppercase;
+                        //color: #FFF;
+                    }
+                }
+                .percentage{
+                    font-size: 7em;
+                    color: $color-offGreen;
+                }
+                .rate{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .rate-number{
+                        font-size: 7em;
+                        color: $color-offGreen;
+                    }
+                    .rate-text{
+                        width: 36px;
+                        color: $color-offGreen;
+                    }
+                    &+.rate-title{
+                        color: $color-darkAqua;
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+            .middle-content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                table{
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    text-align: left;
+                    line-height: 1.5;
+                }
+            }
+            .right-content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding-left: 80px;
+                line-height: 1.5;
+                p{
+                    color: $color-offGreen;
+                }
+                table{
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    text-align: left;
+                    line-height: 1.5;
+                }
+            }
+
+
+            
+        }
+        &.statistics-2-wrapper{
+            background-color: $color-topaz;
+            &.first{
+                background-color: #2cd3ce;
+            }
+            .statistics-2 {
+                background:#2cd3ce;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:white;
+                padding-bottom: 30px;
+                .top2and3 {
+                    width:33.33%;                
+                    
+                    div {
+                        width:100%;
+                        height:50%;                    
+                        vertical-align: middle;
+                        text-align: center;
+                    }
+                }
+    
+                div {
+                    // width: 33.33%;
+                    padding:3%;
+                    box-sizing: border-box;                
+    
+                    &.ph {
+                        text-align: center;
+                        font-size:43px;    
+                        padding-right: 0;
+                        
+                        img {
+                            margin-bottom:30px;
+                        }
+                    }
+    
+                    &.in, &.mal{
+                        text-align: center;
+                        font-size:31px;
+                        table {
+                            width:100%;
+                            border:none;
+                            td {
+                                width:50%;
+                                padding:10px;
+                                box-sizing: border-box;
+                                text-align: center;                            
+                                border:none;
+                            }
+                        }
+                    }
+    
+                    &.mal {
+                        margin-top:30px;
+                    }
+    
+                    &.world {                    
+                        font-size: 25px;                    
+                        padding:10% 5%;
+                        padding-left: 0;
+                        min-width: 400px;
+                        table {
+                            width:100%;
+                            line-height:1.5em;
+                        }
+                    }
+                }
+            }
+        }
+        .breaker{
+            display: flex;
+            width: 70%;
+            margin: 120px auto 0;
+            img{
+                margin: 0 120px 0 0;
+            }
+        }
+        .statistics-footer{
+            width: 70%;
+            margin: 120px auto;
+            text-align: center;
+            h2 {
+                color: $color-offGreen;
+                margin-bottom:15px;
+                font-weight:bold;
+            }
+
+            h3{
+                color: $color-offGreen;
+            }
+
+        }
+    }
+    &.aling-tindera-about{
+        padding: 50px 0 100px !important;
+        .wrapper{
+            padding: 0 !important;
+            div{
+                p{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+body.screen{
+    &-medium{ //Max-Width 1023px and Min-Width 641px
+        section {
+            &.our-goals {
+                .content-body-wrapper{                    
+                    display: block;                    
+                    img{
+                        max-width:100%;
+                        width:100%;                         
+                        margin-bottom:30px;
+
+                    }
+                    .content-body{
+                        text-align: left;
+                        padding-left:30px;
+                    }
+                }
+            }
+        }
+    }
+    &-medium-below{ //Max-Width 1023px
+
+        .content-statistics-title{
+            padding: 0 !important;
+            // margin: 0 -20% 20px -20%;
+        }
+        .source{
+            bottom: 50px;
+        }
+        .our-goals{
+            & *:not(.source){
+                width: unset !important;
+            }
+            .content-body-wrapper{
+                grid-template-columns: 1fr !important;
+                text-align: center;
+                margin: auto !important;
+                .img-wrapper{
+                    padding: 20px 0;
+                }
+                .content-body{
+                    text-align: center !important;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        section{
+            &.aling-tindera {
+                display: block;            
+                margin: 0px auto 20px auto;
+                padding:0 10%;
+                color: $color-offGreen;
+                flex-grow: 0 auto;
+                .statistics {
+                    display:block;
+                    margin: 0;
+                    // padding-top: 100px;
+                    .left-content{                        
+                        width: 100%;    
+                        display:block;           
+                        text-align:center;                         
+                        margin-bottom:40px;
+                        padding: 0 !important;
+                        .content-statistics-title{
+                            color: $color-darkAqua;
+        
+                            span {
+                                text-transform: uppercase;
+                                //color: #FFF;
+                            }
+                        }
+                        .percentage{
+                            font-size: 7em;
+                            color: $color-offGreen;
+                        }
+                        .rate{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 50%;
+                            .rate-number{
+                                font-size: 7em;
+                                color: $color-offGreen;
+                            }
+                            .rate-text{
+                                width: 36px;
+                                color: $color-offGreen;
+                            }
+                        }
+                    }
+
+                    .right-content{
+                        display:block;
+                        width:100%;
+                        text-align:center;
+                        padding-left:0;
+                    }
+
+                    .middle-content{
+                        width: 100%;
+                    }
+                }
+
+                .statistics-footer{
+                    padding-bottom: 2rem;
+                }
+
+                &.statistics-2-wrapper{
+                    padding-top: 0 !important;
+                    margin: 0;
+                    margin-top: -20px;
+                    & *{
+                        margin: auto;
+                    }
+                    &>*{
+                        padding: 2rem;
+                    }
+                    table{
+                        tr{
+                            display: grid;
+                            grid-template-columns: 50% 50%;
+                            justify-content: center;
+    
+                            td{
+                                text-align: left !important;
+                                padding: 0 !important;
+                                width: 100% !important;
+                                align-self:flex-start !important;
+                                text-align: left !important;
+                                font-size: 1.2rem !important;
+                                &:first-child{
+                                    text-align: right !important;
+                                    padding-right: 20px !important;
+                                }
+                                &:last-child{
+                                    padding-left: 20px !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .statistics-2{
+                        flex-direction: column;
+                        &>*{
+                            width: 100%;
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
+
+            &.aling-tindera-about {
+                padding: 3rem 1rem !important;
+            }
+
+
+            &.aling-tindera:not(.aling-tindera-about){
+                padding-bottom: 50px;
+            }
+        }
+    }
+    &-small{ //Max-Width 640px
+        section {
+            &.our-goals {
+                .content-body-wrapper{                    
+                    display: block;                    
+                    img{
+                        max-width:100%;
+                        width:100%;                         
+                        margin-bottom:30px;
+
+                    }
+                    .content-body{
+                        text-align: left;
+                        padding-left:30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 965px) {
+//     section {
+//         &.aling-tindera{            
+//             .statistics{    
+//                 div {
+//                     width:50%;
+//                 }            
+//                 .left-content{                    
+//                     .percentage{
+//                         font-size: 4em;                        
+//                     }
+//                  }
+//                  .rate{
+//                     display: flex;
+//                     align-items: center;                    
+                    
+//                     .rate-number{                        
+//                         font-size: 4em !important;
+//                         color: $color-offGreen;
+//                     }
+//                     .rate-text{
+//                         width: 36px;
+//                         color: $color-offGreen;
+//                     }
+//                 }
+//                 .right-content{
+//                     width:100%;
+//                 }
+//             }
+
+//             &.statistics-rate{
+//                 margin-top: 20px;
+//                 background:red;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 760px) {
+//     section {
+//         &.aling-tindera{      
+//             .statistics {
+//                 &.statistics-rate {
+//                     margin-top: 20px;
+//                     display:block;                
+//                     text-align: center;
+    
+//                     .left-content{                    
+//                         display:block;
+//                         width:100%;                        
+//                         .rate {
+//                             display:flex;
+//                             width:40%;
+//                             flex-direction: row;                            
+//                             margin:auto;                                                        
+                            
+//                             & > * {
+//                                 flex:1;
+//                             }
+//                         }                        
+//                     }
+    
+//                     .middle-content{
+//                         display:block;
+//                         width:60%;    
+//                         margin: 40px auto;                                                                        
+
+//                         table {
+//                             width:100%;                            
+                            
+//                             td:nth-of-type(1) {                                
+//                                 width:70%;
+//                                 text-align:left;                                
+//                                 padding-right:5%;
+//                             }
+
+//                             td:nth-of-type(2) {
+//                                 text-align:right;
+//                                 padding-left:5%;
+//                             }
+//                         }
+//                     }
+    
+//                     .right-content{
+//                         display:block;
+//                         width:60%;    
+//                         margin: 20px auto;  
+//                         padding-left:0;                                                                      
+//                         table {
+//                             width:100%;                              
+                                                      
+//                             td:nth-of-type(1) {                                
+//                                 width:70%;
+//                                 text-align:left;                                
+//                                 padding-right:5%;
+//                             }
+
+//                             td:nth-of-type(2) {
+//                                 text-align:right;
+//                                 padding-left:5%;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }                              
+//         }
+//     }
+// }
